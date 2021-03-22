@@ -5,18 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Take A Picture"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:laygravity="center_horizontal" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Camera" />
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:foreground="@drawable/camera" />
 
     <ImageView
-        android:layout_weight="1"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="496dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
